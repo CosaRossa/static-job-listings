@@ -1,11 +1,11 @@
 import BgHeader from "./components/BgHeader";
-import MainContent from "./components/MainContent";
+import Main from "./components/Main/Main";
 
 function App() {
   return (
     <div className="App background">
       <BgHeader/>
-      <MainContent/>
+      <Main/>
     </div>
   );
 }
