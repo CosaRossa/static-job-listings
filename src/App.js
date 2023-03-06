@@ -1,4 +1,4 @@
-import BgHeader from "./components/BgHeader";
+import BgHeader from "./components/BgHeader/BgHeader";
 import Main from "./components/Main/Main";
 
 function App() {
