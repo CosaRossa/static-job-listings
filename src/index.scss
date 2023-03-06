@@ -44,13 +44,14 @@ body {
     & .filters {
       width: 100%;
       padding: 0.5rem 1.5rem;
-      box-shadow: 1px 12px 14px $desaturatedCyan;
-      background-color: #fff;
+      position: relative;
+      top: -29px;
+      left: initial;
       display: flex;
       justify-content: space-between;
-      position: relative;
-      top: -20px;
-      left: initial;
+      align-items: center;
+      box-shadow: 1px 12px 14px $desaturatedCyan;
+      background-color: #fff;
       border-radius: 7px;
 
       & .filters__list {
@@ -58,7 +59,7 @@ body {
         flex-wrap: wrap;
 
         & .filters__item {
-          margin: 6px 16px 6px 0;
+          margin: 7px 16px 7px 0;
           display: flex;
           align-items: center;
           list-style: none;
@@ -100,14 +101,14 @@ body {
       & .filters__clear {
         height: fit-content;
         margin-left: 10px;
-        color: $grayishCyanVeryDark;
+        color: $grayishCyanDark;
         cursor: pointer;
         transition: all 0.3s;
       }
     }
 
     & .jobs {
-      margin: 3.5rem auto 0;
+      margin: 1.8rem auto 0;
 
       & ul.jobs__list {
         width: 100%;
@@ -115,7 +116,7 @@ body {
 
         & li.jobs__item {
           padding: 1.5rem;
-          margin-top: 2.5rem;
+          margin-bottom: 2.5rem;
           background-color: #fff;
           border-radius: 7px;
           box-shadow: 1px 12px 14px $desaturatedCyan;
