@@ -1,5 +1,3 @@
-import React from 'react'
-
 const JobItemCategories = ({job, getActiveFilters, getShowFilters}) => {
 
     const categories = [job.role, job.level, ...job.languages, ...job.tools];

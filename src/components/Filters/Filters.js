@@ -1,4 +1,3 @@
-import React from 'react'
 import Filter from './Filter';
 
 const Filters = ({filters, removeFilter, clearFilters, show, getShowFilters}) => {

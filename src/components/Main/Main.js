@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Filters from '../Filters/Filters';
 import Jobs from '../Jobs/Jobs';
 
@@ -12,7 +12,7 @@ const Main = () => {
         if (!(activeFilters.includes(filter))) {
             setActiveFilters([...activeFilters, filter]);
         }
-    }
+    };
 
     const removeFilter = filter => {
         const filteredArray = activeFilters.filter(activeFilter => activeFilter !==  filter)
@@ -22,24 +22,26 @@ const Main = () => {
         if (filteredArray.length === 0) {
             setShowFilters(false);
         }
-    }
+    };
 
     const clearFilters = () => {
         setActiveFilters([])
-    }
+    };
 
     const getShowFilters = show => {
         setShowFilters(show)
-        
+    };
+
+    useEffect(() => {
         // add or remove class depending on the presence of the filter bar
         const jobsElement = document.getElementsByClassName('jobs')[0];
-        if (show) {
+        if (showFilters) {
             jobsElement.classList.add('jobs_filters-in');
         }
         else {
             jobsElement.classList.remove('jobs_filters-in');
         }
-    }
+    }, [showFilters]);
 
     return (
         <main className='main-container'>

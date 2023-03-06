@@ -1,4 +1,3 @@
-import React from 'react'
 import JobItemCategories from './JobItemSections/JobItemCategories'
 import JobItemInfo from './JobItemSections/JobItemInfo'
 

@@ -1,5 +1,3 @@
-import React from 'react'
-
 const JobItemInfo = ({job}) => {
     return (
         <div className='jobs__item__info'>
