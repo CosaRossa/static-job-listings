@@ -30,6 +30,15 @@ const Main = () => {
 
     const getShowFilters = show => {
         setShowFilters(show)
+        
+        // add or remove class depending on the presence of the filter bar
+        const jobsElement = document.getElementsByClassName('jobs')[0];
+        if (show) {
+            jobsElement.classList.add('jobs_filters-in');
+        }
+        else {
+            jobsElement.classList.remove('jobs_filters-in');
+        }
     }
 
     return (

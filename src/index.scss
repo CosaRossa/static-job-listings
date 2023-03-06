@@ -1,15 +1,15 @@
 // COLORS
 $grayishCyan: hsl(180, 52%, 96%); // Background
-$desaturatedCyanDark: hsl(180, 29%, 50%); // Primary
+$desaturatedCyanDark: hsl(180, 29%, 50%);
 $desaturatedCyan: hsl(180, 33%, 86%); // Box Shadow
-$grayishCyan: hsl(180, 31%, 95%); // Filter Tablet
+$grayishCyan: hsl(180, 31%, 95%);
 $grayishCyanDark: hsl(180, 8%, 52%);
 $grayishCyanVeryDark: hsl(180, 14%, 20%);
 
 // BREAKPOINTS
-$desktop: 992px;
-$tablet: 768px;
 $mobile: 376px;
+$tablet: 768px;
+$desktop: 992px;
 $largeDevice: 1200px;
 
 // STYLES (mobile first)
@@ -108,7 +108,11 @@ body {
     }
 
     & .jobs {
-      margin: 1.8rem auto 0;
+      margin: 3.5rem auto 0;
+
+      &.jobs_filters-in {
+        margin-top: 1.8rem;
+      }
 
       & ul.jobs__list {
         width: 100%;
@@ -263,7 +267,7 @@ body {
       & .jobs {
         & ul.jobs__list {
           & li.jobs__item {
-            margin-top: 3.5rem;
+            margin-bottom: 3.5rem;
 
             & .jobs__item__left-section {
               & .jobs__item__logo {
@@ -321,9 +325,13 @@ body {
       }
 
       & .jobs {
+        &.jobs_filters-in {
+          margin-top: 2.5rem;
+        }
+
         & ul.jobs__list {
           & li.jobs__item {
-            margin-top: 4rem;
+            margin-bottom: 4rem;
 
             & .jobs__item__left-section {
               & .jobs__item__logo {
@@ -354,10 +362,14 @@ body {
       }
 
       & .jobs {
+        &.jobs_filters-in {
+          margin-top: 1rem;
+        }
+
         & ul.jobs__list {
           & li.jobs__item {
             padding: 2rem 2.5rem;
-            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
